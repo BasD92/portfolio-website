@@ -1,0 +1,406 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section {
+    overflow: auto;
+}
+
+#header {
+    width: 100%;
+    margin-top: 5px;
+    position: fixed;
+    height: auto;
+    z-index: 1;
+}
+
+/* Home*/
+#home {
+    width: auto;
+    text-align: center;
+    height: 670px;
+    background-image: url(../img/backgroundhome.jpg);
+    background-size: 100% 100%;
+}
+
+h1 {
+    display: none;
+    font-size: 3em;
+    margin-top: 6%;
+}
+
+#imgbas {
+    display: none;
+    width: 200px;
+    height: 295px;
+}
+
+h2 {
+    display: none;
+    margin-top: 4.8%;
+    font-size: 2.5em;
+}
+
+/* End Home*/
+
+/* About me*/
+#aboutme {
+    width: auto;
+    background-color: #F2F2F2;
+}
+
+h3 {
+    font-size: 1.8em;
+    margin-top: 6%;
+    text-align: center;
+}
+
+#alltextme {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.textme {
+    font-size: 1em;
+    width: 100%;
+    margin-top: 1px;
+    float: left;
+}
+
+#dordrecht {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+    margin-bottom: 1%;
+}
+
+/* End about me*/
+
+/* Portfolio*/
+#portfolio {
+    width: auto;
+    height: auto;
+}
+
+#allportfolio {
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.showportfolio {
+    width: 48%;
+    float: left;
+    margin-left: 1.8%;
+    margin-bottom: 2%;
+}
+
+.imgportfolio {
+    width: 100%;
+    height: 300px;
+}
+
+.imgportfolio:hover {
+    opacity: 0.7;
+}
+
+.title {
+    width: 100%;
+    float: left;
+}
+
+#allportfolio p {
+    width: 95%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* End portfolio*/
+
+/* Skills*/
+#skills {
+    width: auto;
+    background-color: #F2F2F2;
+}
+
+#titleskills {
+    text-align: center;
+}
+
+.skills-bar {
+    background-color: #1a1a1a;
+    height: 35px;
+    padding: 5px;
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+}
+
+.skills-bar span {
+    display: inline-block;
+    height: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+    transition: width .4s ease-in-out;
+}
+
+.blue span {
+    background-color: #34c2e3;
+}
+
+.orange span {
+    background-color: #fecf23;
+    background-image: linear-gradient(top, #fecf23, #fd9215);
+}
+
+.green span {
+    background-color: #a5df41;
+    background-image: linear-gradient(top, #a5df41, #4ca916);
+}
+
+.purple span {
+    background-color: purple;
+}
+
+.darkblue span {
+    background-color: darkblue;
+}
+
+.red span {
+    background-color: red;
+}
+
+.skilltext {
+    color: #ffffff;
+    font-size: 2em;
+    margin-left: 8px;
+}
+
+/* End skills*/
+
+/* contact*/
+#contact {
+    width: auto;
+    padding: 1em 2em;
+    background: #e3e3e3;
+}
+
+#contactText {
+    text-align: center;
+}
+
+/* End contact*/
+
+/* Footer*/
+footer {
+    width: auto;
+    text-align: center;
+    background-color: #cccccc;
+    overflow: hidden;
+}
+
+.socialmediabutton {
+    margin-top: 1%;
+    height: 45px;
+    width: 45px;
+}
+
+/* End footer*/
+
+/* Responsive*/
+
+/* Home responsive*/
+@media screen and (max-width: 500px) {
+
+    #home {
+        height: auto;
+        background-image: url(../img/backgroundhome2.jpg);
+    }
+
+    h1 {
+        display: block;
+        font-size: 3em;
+        margin-top: 6%;
+    }
+
+    #imgbas {
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        height: 295px;
+    }
+
+    h2 {
+        display: block;
+        margin-top: 4.8%;
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 300px) {
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+}
+
+/* End home responsive*/
+
+/* About me responsive*/
+@media screen and (max-width: 480px) {
+
+    .textme {
+        font-size: 1em;
+        width: 100%;
+        margin-top: 10px;
+        float: left;
+    }
+}
+
+/* End about me Responsive*/
+
+/* portfolio responsive*/
+
+@media screen and (max-width: 850px) {
+
+    .imgportfolio:hover {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .showportfolio {
+        width: 100%;
+        margin-top: 2%;
+        float: left;
+        margin-bottom: 2%;
+    }
+
+    .imgportfolio {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+/* End portfolio responsive*/
+
+/* Skills responsive*/
+@media screen and (max-width: 1000px) {
+
+    .skills-bar {
+        width: 68%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .skills-bar {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    .skilltext {
+        color: #ffffff;
+        font-size: 1.3em;
+        margin-left: 5px;
+    }
+}
+
+/* End skills responsive*/
+
+/* contact responsive*/
+@media screen and (max-width: 1000px) {
+
+    #contactform {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    input, textarea {
+        width: 100%;
+        line-height: 2em;
+    }
+
+    #send {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    #contactform {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    input, textarea {
+        width: 100%;
+        line-height: 2em;
+    }
+
+    #send {
+        width: 50%;
+    }
+}
+
+/* End contact responsive*/
+
+/* Margin-top h responsive*/
+@media screen and (max-width: 850px) {
+
+    h3 {
+        margin-top: 8%;
+    }
+}
+
+@media screen and (max-width: 635px) {
+
+    h3 {
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    h1 {
+        margin-top: 12%;
+    }
+
+    h3 {
+        margin-top: 12%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    h1 {
+        margin-top: 16%;
+    }
+
+    h3 {
+        margin-top: 16%;
+    }
+}
+
+/* End margin-top h responsive*/
+
+/* End Responsive*/
+
+
+
+
